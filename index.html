@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="stylesheet" href="chart.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+
+
+
+  <main class="main__container">
+
+    <div class="main__balance__container">
+
+      <div class="container__balance">
+
+        <p class="title">My balance</p>
+        <h1 class="balance">$921.48</h1>
+
+      </div>
+      
+      <img src="./logo.svg" alt="logo" class="balance__section__logo">
+      
+    </div>
+      
+    
+    <div class="main__chart__data__container">
+
+      <section class="chart__section">
+
+        <h1 class="chart__section__title">Spending - Last 7 days</h1>
+
+        <div class="chart__container">
+
+          <!---
+          <div class="chart__bar">
+            <div class="chart__label">$57</div>
+            <div class="chart__x__axis">Mon</div>
+          </div>  -->
+
+        </div>
+        
+      </section>
+
+      <section class="numbers__section__container">
+
+          <div class="total__section">
+            <p class="section__text">Total this month</p>
+            <p class="amount">$478.33</p>
+          </div>
+
+          <div class="rate__section">
+            <p class="rate">+2.4%</p>
+            <p class="section__text">from last month</p>
+          </div>
+      </section>
+  
+    </div>
+
+    <script type="module" src="chart.js"></script>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

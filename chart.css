@@ -1,0 +1,176 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+  --SoftRed: rgb(236, 119, 95);
+  --Cyan: hsl(186, 34%, 60%);
+  --DarkBrown: hsl(25, 47%, 15%);
+  --MediumBrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --VeryPaleOrange: hsl(33, 100%, 98%);
+}
+
+body {
+  background-color: var(--Cream);
+  font-size: 18px;
+}
+
+.main__container {
+  width: 94%;
+  margin: 65px auto;
+}
+
+.main__balance__container {
+  background-color: var(--SoftRed);
+  color: var(--VeryPaleOrange);
+  border-radius: 10px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.balance__section__logo {
+  width: 63px;
+  height: 43px;
+}
+
+.title {
+  font-size: 0.85em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.balance {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.main__chart__data__container {
+  background-color: var(--VeryPaleOrange);
+  padding: 30px 22px;
+}
+
+/*------chart section ------*/
+
+.chart__section__title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--DarkBrown);
+}
+
+.chart__container{
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--Cream);
+}
+
+.chart__bar {
+  width: 35px;
+  height: 200px;
+  background-color: var(--SoftRed);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.chart__bar:active {
+  background-color: var(--Cyan);
+}
+
+
+.chart__label {
+  background-color: black;
+  color: white;
+  font-size: 0.7em;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: -5px;
+  top: -35px;
+  display: none;
+}
+
+.chart__x__axis {
+  font-size: 0.6em;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  text-align: center;
+  color: var(--MediumBrown);
+}
+
+
+
+#money__chart {
+  width: 100%;
+  margin: 20px 0px 
+}
+
+.numbers__section__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px 0px;
+  border-top: 2px solid var(--Cream);
+}
+
+.rate__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.amount {
+  font-size: 1.5em;
+  color: var(--DarkBrown);
+  font-weight: 700;
+}
+
+.rate {
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: right;
+}
+
+.section__text {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--MediumBrown);
+}
+
+
+@media only screen and (min-width: 550px) {
+  .main__container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .main__container {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__container {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .main__container {
+    width: 32%;
+  }
+}
+
