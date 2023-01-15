@@ -166,6 +166,10 @@ body {
   .main__container {
     width: 40%;
   }
+  
+  .chart__bar {
+    width: 50px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
